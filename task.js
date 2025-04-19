@@ -1,13 +1,21 @@
-function fibonacciGenerator(n) {
-  let fibonacciNumbers = [0, 1];
-
-  for (let i = 2; i < n; i++) {
-    fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
-  }
-
-  for (let i = 0; i < n; i++) {
-    console.log(fibonacciNumbers[i]);
-  }
+function isPrime(num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
-fibonacciGenerator(50);
+function findPrimes() {
+    for (let i = 1; i <= 100; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
+    }
+}
+
+findPrimes();
