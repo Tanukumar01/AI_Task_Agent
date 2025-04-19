@@ -18,7 +18,7 @@ async function askAI(prompt) {
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer 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",  // Replace with your key or load from .env
+      "Authorization": "Bearer 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", 
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
