@@ -4,4 +4,5 @@ async function askAI(prompt) {
     return `// sample response for prompt: ${prompt}`;
 }
 
-module.exports = { askAI };
+module.exports = { askAI }; // module export
+
