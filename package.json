@@ -1,0 +1,27 @@
+{
+  "name": "ai_model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.6.1",
+    "readline-sync": "^1.4.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanukumar01/Ai-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tanukumar01/Ai-agent/issues"
+  },
+  "homepage": "https://github.com/Tanukumar01/Ai-agent#readme",
+  "description": ""
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Task Agent</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🤖 AI Task Agent</h1>
+            <p>Give me a task, and I'll execute it on your machine.</p>
+        </header>
+        
+        <main>
+            <div class="task-form" id="taskForm">
+                <h2>What task would you like me to perform?</h2>
+                <textarea id="taskInput" placeholder="Describe your task... (e.g., Create a simple Express.js server that responds with 'Hello World')" rows="4"></textarea>
+                <button id="submitTask">Execute Task</button>
+            </div>
+            
+            <div class="status-panel" id="statusPanel">
+                <div class="status-indicator info">
+                    <span>💡</span>
+                    <span>Enter a task to get started!</span>
+                </div>
+            </div>
+            
+            <div class="plan-container hidden" id="planContainer">
+                <div class="plan-header">🔍 AI Task Plan</div>
+                <div class="plan-explanation" id="planExplanation"></div>
+                
+                <div class="files-section" id="filesSection">
+                    <div class="section-header">Code Files to Create</div>
+                    <div id="filesList"></div>
+                </div>
+                
+                <div class="steps-section" id="stepsSection">
+                    <div class="section-header">Commands to Execute</div>
+                    <div id="stepsList"></div>
+                </div>
+                
+                <div class="action-buttons" id="planActions">
+                    <button class="danger" id="rejectPlan">Reject</button>
+                    <button class="success" id="approvePlan">Approve Plan</button>
+                </div>
+            </div>
+            
+            <div class="execution-results hidden" id="executionResults">
+                <h3>Execution Results</h3>
+                <div id="resultsList"></div>
+                
+                <div class="task-success-check">
+                    <h3>Was the task completed successfully?</h3>
+                    <div class="action-buttons">
+                        <button class="danger" id="taskFailed">No, it failed</button>
+                        <button class="success" id="taskSucceeded">Yes, it worked!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feedback-form hidden" id="feedbackForm">
+                <h3>Please describe what went wrong:</h3>
+                <textarea id="feedbackInput" placeholder="What issues did you encounter?" rows="3"></textarea>
+                <button id="submitFeedback">Retry with this feedback</button>
+            </div>
+        </main>
+
+    </div>
+    </body>
+    <script src="/script.js"></script>
+    </html>
+    
+    
