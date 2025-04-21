@@ -5,4 +5,3 @@ async function askAI(prompt) {
 }
 
 module.exports = { askAI }; // module export
-

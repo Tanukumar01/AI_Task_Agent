@@ -1,21 +1,20 @@
-function isPrime(num) {
-    if (num <= 1) {
-        return false;
-    }
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) {
-            return false;
-        }
-    }
-    return true;
+function line1() {
+    return "In a world of chaos and strife,";
 }
 
-function findPrimes() {
-    for (let i = 1; i <= 100; i++) {
-        if (isPrime(i)) {
-            console.log(i);
-        }
-    }
+function line2() {
+    return "I find solace in the beauty of life.";
 }
 
-findPrimes();
+function line3() {
+    return "A gentle breeze, a bird’s sweet song,";
+}
+
+function line4() {
+    return "Remind me that I belong.";
+}
+
+console.log(line1());
+console.log(line2());
+console.log(line3());
+console.log(line4());
