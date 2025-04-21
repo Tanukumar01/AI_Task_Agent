@@ -3,6 +3,7 @@ const fs = require("fs");
 const { exec } = require("child_process");
 const cors = require("cors");
 const fetch = require("node-fetch");
+require('dotenv').config();
 
 
 const app = express();
@@ -18,7 +19,7 @@ async function askAI(prompt) {
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer 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", 
+      "Authorization": `Bearer ${process.env.OPEN_ROUTER}` , 
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
