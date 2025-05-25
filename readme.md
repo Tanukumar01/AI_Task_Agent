@@ -28,22 +28,6 @@ AI Task Agent is a smart command-line and browser-based assistant that takes use
 
 ---
 
-## 📂 Project Structure
-
-```
-/ai-task-agent
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
-├── backend/
-│   ├── server.js
-│   └── agent.js
-├── package.json
-└── README.md
-```
-
----
 
 ## 🧪 How It Works
 
